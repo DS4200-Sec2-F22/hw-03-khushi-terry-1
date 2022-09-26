@@ -1,0 +1,41 @@
+body{
+    font-family: Arial;
+}
+
+h1 {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.img-column {
+    justify-content:center;
+}
+  
+.button-column {
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    gap:30px;
+}
+
+button{
+    width:200px;
+    height:50px;
+}
+
+h2 {
+    text-align:center;
+}
