@@ -21,9 +21,47 @@
         <div class='column'>
           <div class='button-column'>
             <button id = 'MCbutton1' type="button" onclick="reveal(event)">Reveal Marks and Channels</button>
-            <div id = 'MCbutton-id1' class="gen"></div>
+            <div id = 'MCbutton-id1' class="gen hide">
+                <h3>Marks</h3>
+                <ul>
+                  <li>Lines (Electoral votes needed to win)</li>
+                  <li>Area (Map of the US)</li>
+                  <li>Points (Nebraska and Maine electoral votes)</li>
+                </ul>
+                <h3>Channels</h3>
+                <ul>
+                  <li>Positions on horizontal scale (quantitative - number of electoral votes)
+                    <ul><li>Use of position was an effective representation as 
+                      the human perceptual judgment can estimate length correctly 
+                      and in combination with hue, categories are fully separable. </li></ul>
+                  </li>
+                  <li>Color hue (categorical - Trump vs Clinton)
+                    <ul><li>Effective use of hue as the colors are intuitive to users and 
+                      matches how one would interpret the data and each category is easily 
+                      discriminable. The use of color hue takes advantage of grouping that 
+                      adds to its efficacy.  </li></ul>
+                  </li>
+                  <li>Spatial region (categorical - states)
+                    <ul><li>Effective use of spatial regions because users would naturally
+                       interpret a map in this way. </li></ul>
+                  </li>
+                  <li>Area/length (number of electoral votes in Nebraska and Maine)
+                    <ul><li>Effective use of the channel because the audience can easily 
+                      dentify how many electoral votes from each party go towards the total 
+                      for each state. The data is easily separable between hue and overall 
+                      length/area that represents each electoral vote.  </li></ul>
+                  </li>
+                </ul>  
+            </div>
             <button id='Cbutton1' type="button" onclick="reveal(event)">Reveal Colormap</button>
-            <div id = 'Cbutton-id1' class="gen"></div>
+            <div id = 'Cbutton-id1' class="gen hide">
+              <h3>Colormap</h3>
+              <ul>
+                <li>Categorical
+                  <ul><li>Effective representation as the data is categorical</li></ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -37,9 +75,47 @@
         <div class='column'>
           <div class='button-column'>
             <button id='MCbutton2' type="button" onclick="reveal(event)">Reveal Marks and Channels</button>
-            <div id = 'MCbutton-id2' class="gen"></div>
+            <div id = 'MCbutton-id2' class="gen hide">
+              <h3>Marks</h3>
+              <ul>
+                <li>Points (batted balls)</li>
+              </ul>
+              <h3>Channels</h3>
+              <ul>
+                <li>Both positions (ordered quantitative: exit velocity - x and launch angle - y)
+                  <ul><li>Effective representation of quantitative data. 
+                    User can infer that higher up and further right imply higher quantities.</li></ul>
+                </li>
+                <li>Color hue (categorical:above and below average)
+                  <ul><li>This is an effective channel for representing categorical data; 
+                    however, colors could be chosen closer to human intuition with above 
+                    and below average (e.g. green vs red) and use of a different color than white 
+                    (which is often associated with no data) could be used to represent average. 
+                    Overall, the data still displays distinguishable groups and is quite effective.</li></ul>
+                </li>
+                <li>Spatial region (categorical : pop-ups, fly balls, line drives, ground balls)
+                  <ul><li>Effective, spatial region is used to represent categorical data, 
+                    and the lines help distinguish what category each batted ball falls into. </li></ul>
+                </li>
+                <li>Saturation (ordered quantitative: scoring value of batted balls made at each launch angle and exit velocity)
+                  <ul><li>Effective as human natural tendency 
+                    is to consider points that or more saturated to have more in quantity.</li></ul>
+                </li>
+              </ul>  
+            </div>
             <button id='Cbutton2'type="button" onclick="reveal(event)">Reveal Colormap</button>
-            <div id = 'Cbutton-id2' class="gen"></div>
+            <div id = 'Cbutton-id2' class="gen hide">
+              <h3>Colormap</h3>
+              <ul>
+                <li>Divergent
+                  <ul><li>Effective representation of ordered quantitative data points, and conveys extremes in data well (above vs below). 
+                    High saturation in the divergent map could skew perception.</li></ul>
+                </li>
+                <li>Sequential
+                  <ul><li>Sequential color map is a bit misleading as saturation from 
+                    below average to average actually decreases as the score increases. However, the mapping is still suggests the differing scores to the audience. </li></ul>
+                </li>
+            </div>
           </div>
         </div>
       </div>
